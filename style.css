@@ -362,12 +362,12 @@
   .home .div-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     align-items: center;
     gap: 80px;
     padding: 112px 64px;
-    position: relative;
-    flex: 0 0 auto;
+    /* position: relative; */
+    /* flex: 0 0 auto; */
     /* background-color: var(--white); */
   }
 
@@ -386,11 +386,12 @@
   }
   
   .home .placeholder-image-2 {
-    height: 640px;
-    position: relative;
+    /* height: 640px; */
+    /* position: relative; */
+    max-width: 46%;
     flex: 1;
-    flex-grow: 1;
-    object-fit: cover;
+    /* flex-grow: 1; */
+    /* object-fit: cover; */
   }
   
   .home .div-3 {
@@ -532,7 +533,7 @@
   .home .div-wrapper-2 {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    /* width: 1440px; */
     align-items: flex-start;
     gap: 80px;
     padding: 112px 64px;
