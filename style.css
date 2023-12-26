@@ -1121,7 +1121,7 @@
     }
 
     .home #logo-wrapper h1 {
-        font-size: 3em;
+        font-size: 2em;
       }
 
     .home .div-wrapper, hero {
@@ -1185,11 +1185,52 @@
         padding: 3em 1em;
     }
 
-    .home .text-2 {
+    .home .text-2, .home .text-5 {
         font-size: 1em;
     }
 
     .home .style-primary-small-3 {
         width: 100%;
+    }
+
+    .home .faq {
+        width: 100%;
+    }
+    
+    .home .faq .container-2 {
+        width: 100%;
+        gap: 2em;
+    }
+
+    .home .section-title {
+        width: 100%;
+    }
+
+    .home .placeholder-image-3 {
+        width: 100%;
+    }
+
+    .home .content-7 {
+        width: 100%;
+    }
+
+    .home .get-ready {
+        padding: 2em 1em;
+    }
+
+    .home .row {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .home .footer {
+        padding: 1em;
+        gap: 0;
+    }
+
+    .home .footer-links {
+        flex-direction: column;
+        align-items: center;
     }
 }
