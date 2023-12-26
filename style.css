@@ -474,7 +474,7 @@
     margin-top: -1px;
     margin-bottom: -1px;
     margin-left: -1px;
-    /* background-color: var(--white); */
+    background-color: var(--white);
     border: 1px solid;
     border-color: #000000;
   }
@@ -1103,10 +1103,11 @@
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
     .home {
-        padding: 1em;
+        /* padding: 1em; */
     }
     .home .container {
         flex-direction: column-reverse;
+        gap: 2em;
     }
 
     .home .logo {
@@ -1124,7 +1125,7 @@
       }
 
     .home .div-wrapper, hero {
-        padding: 0;
+        padding: 1em;
     }
 
     .home .placeholder-image-2, .home .div-3 {
@@ -1173,6 +1174,22 @@
     }
 
     .home .benefits {
-        padding: 3em 0;
+        padding: 0em 1em;
+    }
+
+    .home .column-2 {
+        width: 100%;
+    }
+
+    .home .CTA {
+        padding: 3em 1em;
+    }
+
+    .home .text-2 {
+        font-size: 1em;
+    }
+
+    .home .style-primary-small-3 {
+        width: 100%;
     }
 }
