@@ -1102,13 +1102,16 @@
   
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
+    .home {
+        padding: 1em;
+    }
     .home .container {
         flex-direction: column-reverse;
     }
 
     .home .logo {
         /* width: 4em; */
-        height: 5vw;
+        height: 13vw;
     }
 
     .home #logo-wrapper {
@@ -1119,4 +1122,57 @@
     .home #logo-wrapper h1 {
         font-size: 3em;
       }
+
+    .home .div-wrapper, hero {
+        padding: 0;
+    }
+
+    .home .placeholder-image-2, .home .div-3 {
+        max-width: 100%;
+    }
+
+    .home .medium-length-hero {
+        position: relative;
+        align-self: stretch;
+        margin-top: -1px;
+        font-family: var(--heading-h1-mobile-font-family);
+        font-weight: var(--heading-h1-mobile-font-weight);
+        color: var(--black);
+        font-size: var(--heading-h1-mobile-font-size);
+        letter-spacing: var(--heading-h1-mobile-letter-spacing);
+        line-height: var(--heading-h1-mobile-line-height);
+        font-style: var(--heading-h1-mobile-font-style);
+    }
+
+    .home .p {
+        font-size: var(--text-medium-mobile-normal-font-size);
+        line-height: var(--text-medium-mobile-normal-line-height);
+        position: relative;
+        align-self: stretch;
+        font-family: var(--text-medium-mobile-normal-font-family);
+        font-weight: var(--text-medium-mobile-normal-font-weight);
+        color: var(--black);
+        letter-spacing: var(--text-medium-mobile-normal-letter-spacing);
+        font-style: var(--text-medium-mobile-normal-font-style);
+      }
+    .home .content-5 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .home .div-wrapper-2 {
+        padding: 32px 0;
+    }
+
+    .home .actions-2 .form {
+        flex-direction: column;
+    }
+
+    .home .actions-2 .form .type-default, .home .actions-2 .form .style-primary-small-2{
+        width: 100%;
+    }
+
+    .home .benefits {
+        padding: 3em 0;
+    }
 }
