@@ -10,7 +10,7 @@
   .home .navbar {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     align-items: center;
     position: relative;
     flex: 0 0 auto;
@@ -48,16 +48,17 @@
     /* height: 27px; */
   }
 
-  .home .logo-wrapper {
+  .home #logo-wrapper {
     width: 100%;
     padding: 40px 64px 0 64px;
+    flex-direction: row;
     display: flex;
     align-items: center;
     gap: 2em;
   }
 
-  .home .logo-wrapper h1 {
-    font-weight: bold;
+  .home #logo-wrapper h1 {
+    /* font-weight: bold; */
     font-size: 50px;
     font-family: var(--heading-h1-font-family);
   }
@@ -361,7 +362,7 @@
   .home .div-wrapper {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     align-items: center;
     gap: 80px;
     padding: 112px 64px;
@@ -1095,3 +1096,22 @@
     font-style: var(--text-small-link-font-style);
   }
   
+@media only screen and (max-width: 620px) {
+/* For mobile phones: */
+    .home .container {
+        flex-direction: column-reverse;
+    }
+
+    .home .logo {
+        width: 4em;
+    }
+
+    .home #logo-wrapper {
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .home #logo-wrapper h1 {
+        font-size: 3em;
+      }
+}
