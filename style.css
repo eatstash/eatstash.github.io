@@ -42,9 +42,14 @@
   }
   
   .home .logo {
-    position: relative;
-    width: 63px;
-    height: 27px;
+    /* position: relative; */
+    width: 400px;
+    /* height: 27px; */
+  }
+
+  .home .logo-wrapper {
+    width: 100%;
+    padding: 40px 64px 0 64px;
   }
   
   .home .column {
@@ -353,6 +358,10 @@
     position: relative;
     flex: 0 0 auto;
     background-color: var(--white);
+  }
+
+  .home .div-wrapper,hero {
+    padding-top: 26px;
   }
   
   .home .container {
