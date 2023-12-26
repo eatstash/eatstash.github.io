@@ -44,8 +44,8 @@
   
   .home .logo {
     /* position: relative; */
-    width: 113px;
-    /* height: 27px; */
+    /* width: 113px; */
+    height: 5vw;
   }
 
   .home #logo-wrapper {
@@ -59,7 +59,8 @@
 
   .home #logo-wrapper h1 {
     /* font-weight: bold; */
-    font-size: 50px;
+    font-size: 4vw;
+    font-weight: 100;
     font-family: var(--heading-h1-font-family);
   }
   
@@ -444,7 +445,7 @@
   .home .actions-2 {
     display: flex;
     flex-direction: column;
-    width: 513px;
+    width: 100%;
     align-items: flex-start;
     gap: 16px;
     padding: 16px 0px 0px;
@@ -621,7 +622,7 @@
   .home .CTA {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     align-items: flex-start;
     gap: 80px;
     padding: 112px 64px;
@@ -949,7 +950,7 @@
   .home .footer {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     align-items: center;
     gap: 80px;
     padding: 80px 64px;
@@ -1106,7 +1107,8 @@
     }
 
     .home .logo {
-        width: 4em;
+        /* width: 4em; */
+        height: 5vw;
     }
 
     .home #logo-wrapper {
