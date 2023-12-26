@@ -141,7 +141,7 @@
     margin-top: -1px;
     margin-bottom: -1px;
     margin-right: -1px;
-    background-color: var(--black);
+    background-color: var(--sinopia);
     border: 1px solid;
     border-color: #000000;
     all: unset;
@@ -488,8 +488,8 @@
     margin-top: -1px;
     margin-bottom: -1px;
     margin-right: -1px;
-    background-color: var(--black);
-    border: 1px solid;
+    background-color: var(--sinopia);
+    /* border: 1px solid; */
     border-color: #000000;
   }
   
@@ -613,8 +613,7 @@
     padding: 112px 64px;
     position: relative;
     flex: 0 0 auto;
-    background-color: #00000080;
-    background-image: url(https://c.animaapp.com/B1zWUugc/img/cta---4--.png);
+    background-color: var(--tawny);
     background-size: cover;
     background-position: 50% 50%;
   }
@@ -665,7 +664,7 @@
     margin-top: -1px;
     margin-bottom: -1px;
     margin-right: -1px;
-    background-color: var(--black);
+    background-color: var(--sinopia);
     border: 1px solid;
     border-color: #000000;
   }
