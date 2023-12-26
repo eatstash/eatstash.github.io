@@ -3,8 +3,12 @@
     --white: rgba(255, 255, 255, 1);
     --light-grey: rgba(244, 244, 244, 1);
     --yellow: rgba(248, 207, 19, 1);
+    --yellowLight: rgba(248, 206, 19, 0.257);
     --orange: rgba(235, 121, 12, 1);
+    --orangeLight: rgba(235, 120, 12, 0.401);
+
     --tawny: rgba(206, 93, 22, 1);
+    --tawnyLight: rgba(206, 93, 22, 0.705);
     --golden-gate-bridge: rgba(231, 73, 9, 1);
     --sinopia: rgba(201, 55, 12, 1);
     --heading-h1-font-family: "Roboto-Bold", Helvetica;

@@ -1,9 +1,10 @@
 .home {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
     position: relative;
-    background-color: #ffffff;
+    background-color: white;
   }
   
   .home .navbar {
@@ -13,7 +14,7 @@
     align-items: center;
     position: relative;
     flex: 0 0 auto;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-color: #000000;
@@ -43,13 +44,22 @@
   
   .home .logo {
     /* position: relative; */
-    width: 250px;
+    width: 113px;
     /* height: 27px; */
   }
 
   .home .logo-wrapper {
     width: 100%;
     padding: 40px 64px 0 64px;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .home .logo-wrapper h1 {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: var(--heading-h1-font-family);
   }
   
   .home .column {
@@ -254,7 +264,7 @@
     width: 560px;
     gap: 16px;
     padding: 32px 96px 32px 32px;
-    background-color: var(--light-grey);
+    /* background-color: var(--light-grey); */
     display: flex;
     align-items: flex-start;
     position: relative;
@@ -357,7 +367,7 @@
     padding: 112px 64px;
     position: relative;
     flex: 0 0 auto;
-    background-color: var(--white);
+    /* background-color: var(--white); */
   }
 
   .home .div-wrapper,hero {
@@ -460,7 +470,7 @@
     margin-top: -1px;
     margin-bottom: -1px;
     margin-left: -1px;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     border: 1px solid;
     border-color: #000000;
   }
@@ -527,7 +537,7 @@
     padding: 112px 64px;
     position: relative;
     flex: 0 0 auto;
-    background-color: var(--white);
+    /* background-color: var(--white); */
   }
   
   .home .content-5 {
@@ -939,7 +949,7 @@
     align-items: center;
     gap: 80px;
     padding: 80px 64px;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     position: relative;
     flex: 0 0 auto;
   }
