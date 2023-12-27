@@ -6,6 +6,52 @@
     position: relative;
     background-color: white;
   }
+
+  #mc_embed_shell {
+    width: 100%;
+  }
+  .home .mc-field-group label{
+    display: none;
+  }
+
+  #mc_embed_signup {
+    width: 100%;
+  }
+
+  #mc_embed_signup_scroll {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+  }
+
+  #mc_embed_signup form {
+    width: 100%;
+  }
+
+  .home .mc-field-group {
+    display: flex;
+    width: 100%;
+  }
+
+  .button:hover {
+    cursor: pointer;
+  }
+
+  #mce-EMAIL {
+    position: relative;
+    flex: 1;
+    font-family: var(--text-regular-normal-font-family);
+    font-weight: var(--text-regular-normal-font-weight);
+    color: #000000;
+    font-size: var(--text-regular-normal-font-size);
+    letter-spacing: var(--text-regular-normal-letter-spacing);
+    line-height: var(--text-regular-normal-line-height);
+    font-style: var(--text-regular-normal-font-style);
+    margin-right: 1vw;
+  }
+  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
   
   .home .navbar {
     display: flex;
@@ -128,7 +174,7 @@
   }
   
   .home .button {
-    color: var(--black);
+    color: var(--white);
     position: relative;
     width: fit-content;
     font-family: var(--text-regular-normal-font-family);
@@ -138,8 +184,20 @@
     line-height: var(--text-regular-normal-line-height);
     white-space: nowrap;
     font-style: var(--text-regular-normal-font-style);
-    all: unset;
-    box-sizing: border-box;
+
+    display: flex;
+    /* width: 103px; */
+    padding: 12px 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    background-color: var(--sinopia);
+    /* border: 1px solid; */
+    border-color: #000000;
   }
   
   .home .style-primary-small {
@@ -497,7 +555,7 @@
     line-height: var(--text-regular-normal-line-height);
     font-style: var(--text-regular-normal-font-style);
   }
-  
+
   .home .style-primary-small-2 {
     display: flex;
     /* width: 103px; */
