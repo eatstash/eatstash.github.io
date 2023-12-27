@@ -474,7 +474,7 @@
     position: relative;
     flex: 1;
     flex-grow: 1;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .home .div-3 {
@@ -571,6 +571,10 @@
     letter-spacing: var(--text-regular-normal-letter-spacing);
     line-height: var(--text-regular-normal-line-height);
     font-style: var(--text-regular-normal-font-style);
+  }
+
+  .home .CTA .div-4 p{
+    color: white;
   }
 
   .home .style-primary-small-2 {
@@ -1356,8 +1360,10 @@
     }
 
     .home .placeholder-image-2, .home .placeholder-image-3 {
-        max-width: 350px;
+        /* max-width: 350px; */
         border-radius: 2%;
+        min-height: unset !important;
+        height: 30vh !important;
     }
 
     /* .home .placeholder-image-3 {
