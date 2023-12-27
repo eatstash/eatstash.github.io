@@ -1045,7 +1045,7 @@
     width: 100%;
     align-items: center;
     gap: 80px;
-    padding: 80px 64px;
+    padding: 0 64px 80px 64px;
     /* background-color: var(--white); */
     position: relative;
     flex: 0 0 auto;
