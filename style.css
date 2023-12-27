@@ -1194,9 +1194,6 @@
   
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
-    .home {
-        /* padding: 1em; */
-    }
     .home .container {
         flex-direction: column-reverse;
         gap: 2em;
@@ -1228,7 +1225,7 @@
         position: relative;
         align-self: stretch;
         margin-top: -1px;
-        font-family: var(--heading-h1-mobile-font-family);
+        /* font-family: var(--heading-h1-mobile-font-family); */
         font-weight: var(--heading-h1-mobile-font-weight);
         color: var(--black);
         font-size: var(--heading-h1-mobile-font-size);
@@ -1239,10 +1236,9 @@
 
     .home .p {
         font-size: var(--text-medium-mobile-normal-font-size);
-        line-height: var(--text-medium-mobile-normal-line-height);
+        line-height: var(--text-large-normal-line-height);
         position: relative;
         align-self: stretch;
-        font-family: var(--text-medium-mobile-normal-font-family);
         font-weight: var(--text-medium-mobile-normal-font-weight);
         color: var(--black);
         letter-spacing: var(--text-medium-mobile-normal-letter-spacing);
@@ -1325,4 +1321,17 @@
         flex-direction: column;
         align-items: center;
     }
+
+    #mc_embed_signup_scroll {
+        flex-direction: column;
+      }
+    #mc_embed_signup_scroll .button {
+        width: 100%;
+    }
+
+    #mce-EMAIL {
+        margin: 0 0 4vw 0
+    }
+
+
 }
