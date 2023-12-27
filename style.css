@@ -1354,4 +1354,8 @@
     .button:active {
     transform: none;
     }
+
+    .home .placeholder-image-2 {
+        max-width: 91vw;
+    }
 }
