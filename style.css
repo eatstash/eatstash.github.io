@@ -1359,11 +1359,15 @@
     transform: none;
     }
 
-    .home .placeholder-image-2, .home .placeholder-image-3 {
+    .home .placeholder-image-2  {
         /* max-width: 350px; */
         border-radius: 2%;
         min-height: unset !important;
-        height: 14vh !important;
+        width: 100vw !important;
+    }
+
+    .home .placeholder-image-3 {
+        border-radius: 2%;
     }
 
     /* .home .placeholder-image-3 {
