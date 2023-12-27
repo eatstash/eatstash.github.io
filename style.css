@@ -1355,7 +1355,12 @@
     transform: none;
     }
 
-    .home .placeholder-image-2 {
-        max-width: 91vw;
+    .home .placeholder-image-2, .home .placeholder-image-3 {
+        max-width: 350px;
+        border-radius: 2%;
     }
+
+    /* .home .placeholder-image-3 {
+        border-radius: 2%;
+    } */
 }
