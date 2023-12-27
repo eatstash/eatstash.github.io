@@ -697,6 +697,10 @@
     background-size: cover;
     background-position: 50% 50%;
   }
+
+  .home .CTA .by-clicking-sign-up {
+    color: white;;
+  }
   
   .home .column-2 {
     display: flex;
