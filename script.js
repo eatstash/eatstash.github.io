@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function gtag_report_conversion(url) {
         var callback = function () {
-            if (typeof(url) != 'undefined') {
-            window.location = url;
-            }
+            // if (typeof(url) != 'undefined') {
+            // window.location = url;
+            // }
         };
         gtag('event', 'conversion', {
             'send_to': 'AW-11458489302/4NfZCNWGiIMZENbX6tcq',
