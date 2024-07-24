@@ -894,6 +894,10 @@
     position: relative;
     flex: 0 0 auto;
   }
+
+  .home .logo-text {
+    height: 5vw;
+  }
   
   .home .heading-3 {
     color: var(--black);
@@ -1207,6 +1211,12 @@
     .home .logo {
         /* width: 4em; */
         height: 13vw;
+    }
+
+    .home .logo-text {
+              /* width: 4em; */
+              height: 13vw;
+
     }
 
     .home #logo-wrapper {
