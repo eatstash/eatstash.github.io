@@ -1,6 +1,6 @@
 **Eatstash Privacy Policy**
 
-**Effective Date: [Insert Date]**
+**Effective Date: 8/8/2024**
 
 Welcome to Eatstash! We respect your privacy and are committed to protecting it while you enjoy our meal planning services. This privacy policy outlines our practices concerning the information we may collect from you or that you may provide when using our mobile application and website ("Services"), and our practices for processing, using, and disclosing that information.
 
