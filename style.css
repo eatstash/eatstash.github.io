@@ -1250,6 +1250,80 @@
     align-items: center;
   }
 
+  .testimonials {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .testimonial {
+    display: none;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .testimonial.active {
+    display: block;
+  }
+  
+  .stars {
+    font-size: 24px;
+    color: gold;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .testimonial-navigation {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonial-navigation button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+  
+  .dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: black;
+  }
+  
+
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
     .home .container {
