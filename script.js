@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const testimonials = document.querySelectorAll('.testimonial');
     const dots = document.querySelectorAll('.dot');
     const totalTestimonials = testimonials.length;
+    let autoScrollInterval;
   
     function showTestimonial(index) {
       testimonials.forEach((testimonial, i) => {
@@ -42,11 +43,18 @@ document.addEventListener('DOMContentLoaded', function () {
     function nextTestimonial() {
       currentTestimonialIndex = (currentTestimonialIndex + 1) % totalTestimonials;
       showTestimonial(currentTestimonialIndex);
+      resetAutoScroll();
     }
   
     function prevTestimonial() {
       currentTestimonialIndex = (currentTestimonialIndex - 1 + totalTestimonials) % totalTestimonials;
       showTestimonial(currentTestimonialIndex);
+      resetAutoScroll();
+    }
+  
+    function resetAutoScroll() {
+      clearInterval(autoScrollInterval);
+      autoScrollInterval = setInterval(nextTestimonial, 10000);
     }
   
     document.querySelector('.next').addEventListener('click', nextTestimonial);
@@ -56,13 +64,15 @@ document.addEventListener('DOMContentLoaded', function () {
       dot.addEventListener('click', () => {
         currentTestimonialIndex = i;
         showTestimonial(currentTestimonialIndex);
+        resetAutoScroll();
       });
     });
   
-    // Auto-scroll functionality
-    setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
+    // Initial auto-scroll setup
+    resetAutoScroll();
   
     // Show the first testimonial initially
     showTestimonial(currentTestimonialIndex);
   });
+  
   
