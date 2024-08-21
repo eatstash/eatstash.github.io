@@ -90,16 +90,19 @@
     height: 5vw;
   }
 
-  .home #logo-wrapper {
+  .home #logo-wrapper, .home #footer-logo-wrapper {
     width: 100%;
-    padding: 40px 64px 0 64px;
     flex-direction: row;
     display: flex;
     align-items: center;
     gap: 2em;
   }
 
-  .home #logo-wrapper h1 {
+  .home #logo-wrapper {
+    padding: 40px 64px 0 64px;
+  }
+
+  .home #logo-wrapper h1, .home #footer-logo-wrapper h1 {
     /* font-weight: bold; */
     font-size: 4vw;
     font-weight: 100;
@@ -1212,7 +1215,41 @@
     white-space: nowrap;
     font-style: var(--text-small-link-font-style);
   }
+
+
+  .home .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start; /* Align content to the left */
+    gap: 40px; /* Reduced gap to tighten up the spacing */
+    padding: 40px 64px 80px 64px; /* Added top padding for more breathing room */
+    /* background-color: var(--white); */
+    position: relative;
+    flex: 0 0 auto;
+  }
   
+  .home .footer .content-9 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .home .footer-links {
+    display: flex;
+    align-items: center; /* Center-align the social media links */
+    gap: 16px; /* Reduce gap between social media icons */
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: auto; /* Push social media links to the right */
+  }
+  
+  #footer-logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
     .home .container {
@@ -1232,12 +1269,12 @@
 
     }
 
-    .home #logo-wrapper {
+    .home #logo-wrapper, .home #footer-logo-wrapper {
         padding: 1em;
         gap: 1em;
     }
 
-    .home #logo-wrapper h1 {
+    .home #logo-wrapper h1, .home #footer-logo-wrapper h1 {
         font-size: 2em;
       }
 
@@ -1348,6 +1385,10 @@
     .home .footer-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .home .footer-links.policies {
+      margin-left: 0;
     }
 
     #mc_embed_signup_scroll {
