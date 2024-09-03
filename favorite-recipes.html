@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our favorites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .recipe-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .recipe-item {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        .recipe-item img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+        .recipe-info {
+            flex-grow: 1;
+        }
+        .recipe-title {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .recipe-link {
+            color: #555;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+        .recipe-item img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Some favorites 😋</h1>
+    <ul class="recipe-list">
+        <li class="recipe-item" onclick="window.location.href='https://www.wellplated.com/baked-salmon-in-foil/';">
+            <img src="https://www.wellplated.com/wp-content/uploads/2018/06/Baked-Salmon-in-Foil-at-400.jpg" alt="Baked Salmon">
+            <div class="recipe-info">
+                <div class="recipe-title">Baked Salmon</div>
+                <div class="recipe-link">wellplated.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.bonappetit.com/recipe/lemony-chicken-and-orzo-soup';">
+            <img src="https://assets.bonappetit.com/photos/5e31fc9a461d010008e1e976/1:1/w_2240,c_limit/Basically-Lemony-Chicken-Orzo-Soup.jpg" alt="Lemony Chicken and Orzo Soup">
+            <div class="recipe-info">
+                <div class="recipe-title">Lemony Chicken and Orzo Soup</div>
+                <div class="recipe-link">www.bonappetit.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.foodandwine.com/recipes/spinach-and-smoked-salmon-salad-lemon-dill-dressing';">
+            <img src="https://www.foodandwine.com/thmb/p-_QOmiK8eM_tJ6fD5H1dROaya4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/HD-201202-r-spinach-and-smoked-salmon-salad-with-lemon-dill-dressing-6106f61623f4410b8c46dbe4055ce735.jpg" alt="Spinach and Smoked Salmon Salad with Lemon-Dill Dressing">
+            <div class="recipe-info">
+                <div class="recipe-title">Spinach and Smoked Salmon Salad with Lemon-Dill Dressing</div>
+                <div class="recipe-link">foodandwine.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://latvianeats.com/lazy-cabbage-rolls/';">
+            <img src="https://latvianeats.com/wp-content/uploads/2017/06/P1010481-1.jpg" alt="Lazy Cabbage Rolls (Slinkie tīteņi)">
+            <div class="recipe-info">
+                <div class="recipe-title">Lazy Cabbage Rolls (Slinkie tīteņi)</div>
+                <div class="recipe-link">latvianeats.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.pressurecookrecipes.com/instant-pot-chicken-congee/';">
+            <img src="https://www.pressurecookrecipes.com/wp-content/uploads/2016/04/instant-pot-chicken-congee-1.webp" alt="Instant Pot Chicken Congee">
+            <div class="recipe-info">
+                <div class="recipe-title">Instant Pot Chicken Congee</div>
+                <div class="recipe-link">pressurecookrecipes.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.seriouseats.com/colombian-chicken-stew-with-potatoes-tomato-onion-recipe';">
+            <img src="https://www.seriouseats.com/thmb/bbkr9ZQGX8ssb8rP9Sfkio5ivKc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2012__05__20120530-chicken-colombian-potato-tomato-3-9b64ce63fba54a73b726de3c1ee3f33c.jpg" alt="Colombian Chicken Stew With Potatoes, Tomato, and Onion Recipe">
+            <div class="recipe-info">
+                <div class="recipe-title">Colombian Chicken Stew With Potatoes, Tomato, and Onion Recipe</div>
+                <div class="recipe-link">www.seriouseats.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.budgetbytes.com/curried-chickpeas-spinach/';">
+            <img src="https://www.budgetbytes.com/wp-content/uploads/2013/12/Curried-Chickpeas-with-Spinach-V1.jpg" alt="Curried Chickpeas with Spinach">
+            <div class="recipe-info">
+                <div class="recipe-title">Curried Chickpeas with Spinach</div>
+                <div class="recipe-link">budgetbytes.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.simplyleb.com/recipe/chickpea-fatte/';">
+            <img src="https://www.simplyleb.com/wp-content/uploads/chickpea_fatte-17-1.jpg" alt="Chickpea Fatte">
+            <div class="recipe-info">
+                <div class="recipe-title">Chickpea Fatte</div>
+                <div class="recipe-link">simplyleb.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.bonappetit.com/recipe/curried-lentil-tomato-and-coconut-soup';">
+            <img src="https://assets.bonappetit.com/photos/5a05c9df3388d32a6ed54e97/1:1/w_2240,c_limit/curried-lentil-tomato-and-coconut-soup.jpg" alt="Curried Lentil, Tomato, and Coconut Soup">
+            <div class="recipe-info">
+                <div class="recipe-title">Curried Lentil, Tomato, and Coconut Soup</div>
+                <div class="recipe-link">bonappetit.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://cookieandkate.com/roasted-vegetables-recipe/';">
+            <img src="https://cookieandkate.com/images/2023/04/how-to-roast-vegetables-1100x1650.jpg" alt="Colorful Roasted Vegetables">
+            <div class="recipe-info">
+                <div class="recipe-title">Colorful Roasted Vegetables</div>
+                <div class="recipe-link">cookieandkate.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://heghineh.com/chicken-rice-soup/';">
+            <img src="https://i1.wp.com/heghineh.com/wp-content/uploads/2016/12/IMG_7512-1-640x427.jpg?resize=640%2C380&ssl=1" alt="Chicken Rice Soup">
+            <div class="recipe-info">
+                <div class="recipe-title">Chicken Rice Soup</div>
+                <div class="recipe-link">heghineh.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://natashaskitchen.com/spaghetti-meat-sauce-recipe/';">
+            <img src="https://natashaskitchen.com/wp-content/uploads/2019/03/Spaghetti-and-Meat-Sauce-3.jpg" alt="Spaghetti Meat Sauce">
+            <div class="recipe-info">
+                <div class="recipe-title">Spaghetti Meat Sauce</div>
+                <div class="recipe-link">natashaskitchen.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.spendwithpennies.com/pan-seared-pork-chops/';">
+            <img src="https://www.spendwithpennies.com/wp-content/uploads/2022/03/Pan-Seared-Pork-Chops-SpendWithPennies-3.jpg" alt="Pan Seared Pork Chops">
+            <div class="recipe-info">
+                <div class="recipe-title">Pan Seared Pork Chops</div>
+                <div class="recipe-link">spendwithpennies.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.seriouseats.com/harissa-armenian-wheat-and-chicken-porridge-recipe-5224855';">
+            <img src="https://www.seriouseats.com/thmb/1NdV0ESOAI-S-kBKZZ-FOpDGZ2k=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/20220330-harissa-andrew-janjigian-21Beauty0804_1-ebadd715236244d184de8004a4bba46b.JPG" alt="Harissa (Armenian Wheat and Chicken Porridge)">
+            <div class="recipe-info">
+                <div class="recipe-title">Harissa (Armenian Wheat and Chicken Porridge)</div>
+                <div class="recipe-link">seriouseats.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://feelgoodfoodie.net/recipe/meat-stuffed-pitas/';">
+            <img src="https://feelgoodfoodie.net/wp-content/uploads/2021/05/Meat-Stuffed-Pitas-8.jpg" alt="Meat Stuffed Pitas">
+            <div class="recipe-info">
+                <div class="recipe-title">Meat Stuffed Pitas</div>
+                <div class="recipe-link">feelgoodfoodie.net</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.spendwithpennies.com/air-fryer-chicken-thighs/';">
+            <img src="https://www.spendwithpennies.com/wp-content/uploads/2023/12/1200-Air-Fryer-Chicken-Thighs-2-SpendWithPennies.jpg" alt="Air Fryer Chicken Thighs">
+            <div class="recipe-info">
+                <div class="recipe-title">Air Fryer Chicken Thighs</div>
+                <div class="recipe-link">spendwithpennies.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://cookieandkate.com/best-quinoa-salad-recipe/';">
+            <img src="https://cookieandkate.com/images/2017/08/best-quinoa-salad-recipe-3.jpg" alt="Favorite Quinoa Salad">
+            <div class="recipe-info">
+                <div class="recipe-title">Favorite Quinoa Salad</div>
+                <div class="recipe-link">cookieandkate.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.beyondmeat.com/en-US/recipes/beyond-beef-broccoli-bowl';">
+            <img src="https://beyond-meat-cms-production.s3.us-west-2.amazonaws.com/e1d93e2a-2878-4d24-9201-2f54be9527c5.webp" alt="BEYOND BEEF BROCCOLI BOWL">
+            <div class="recipe-info">
+                <div class="recipe-title">Beyond Beef Broccoli Bowl</div>
+                <div class="recipe-link">beyondmeat.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.tasteofbeirut.com/zucchini-in-yogurt-sauce-koossa-bel-laban/';">
+            <img src="https://tasteofbeirutf.wpenginepowered.com/wp-content/uploads/2013/02/koosa-2.jpg" alt="Zucchini in yogurt sauce (Koossa bel-laban)">
+            <div class="recipe-info">
+                <div class="recipe-title">Zucchini in yogurt sauce (Koossa bel-laban)</div>
+                <div class="recipe-link">tasteofbeirut.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.nigella.com/recipes/spinach-avocado-and-pumpkin-seed-salad';">
+            <img src="https://www.nigella.com/assets/uploads/recipes/public-thumbnail/spinach-avocado-and-pumpkin-s-563b2495a7434.jpg" alt="Spinach, Avocado and Pumpkin Seed Salad">
+            <div class="recipe-info">
+                <div class="recipe-title">Spinach, Avocado and Pumpkin Seed Salad</div>
+                <div class="recipe-link">nigella.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.acouplecooks.com/easy-cabbage-salad/';">
+            <img src="https://www.acouplecooks.com/wp-content/uploads/2020/06/Cabbage-Salad-003.jpg" alt="Easy Cabbage Salad">
+            <div class="recipe-info">
+                <div class="recipe-title">Easy Cabbage Salad</div>
+                <div class="recipe-link">acouplecooks.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://www.gimmesomeoven.com/everyday-salad-recipe/';">
+            <img src="https://www.gimmesomeoven.com/wp-content/uploads/2018/06/Everyday-Green-Salad-Recipe-3.jpg" alt="Everyday Salad">
+            <div class="recipe-info">
+                <div class="recipe-title">Everyday Salad</div>
+                <div class="recipe-link">gimmesomeoven.com</div>
+            </div>
+        </li>
+        <li class="recipe-item" onclick="window.location.href='https://feelgoodfoodie.net/recipe/banana-pancakes/';">
+            <img src="https://feelgoodfoodie.net/wp-content/uploads/2022/05/Banana-Pancakes-08.jpg" alt="Fluffy Banana Pancakes">
+            <div class="recipe-info">
+                <div class="recipe-title">Fluffy Banana Pancakes</div>
+                <div class="recipe-link">feelgoodfoodie.net</div>
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>
