@@ -1323,216 +1323,88 @@
   .dot.active {
     background-color: black;
   }
-  
 
-@media only screen and (max-width: 620px) {
-/* For mobile phones: */
-    .home .container {
-        flex-direction: column-reverse;
-        gap: 2em;
-        max-width: 100%;
-    }
+  .pricing-wrapper {
+    background-color: #f9f9f9;
+    width: 100%;
+  }
 
-    .home .logo {
-        /* width: 4em; */
-        height: 13vw;
-    }
+  .pricing-wrapper-header {
+    text-align: center;
+  }
 
-    .home .logo-text {
-              /* width: 4em; */
-              height: 13vw;
+  #pricing-section {
+    background-color: #ffffff;  /* White background for the whole section */
+    padding: 40px 60px;
+    /* border-radius: 8px; */
+    text-align: center;
+    margin: 0;
+    max-width: 500px;
+    gap: 3px;
+    border: 1px solid #000; /* Black border around the pricing box */
+  }
 
-    }
+  .home .pricing-wrapper {
+    gap: 24px;
+    align-items: center;
+  }
 
-    .home .actions-2 {
-      align-items: center;
-    }
-    
+  .home .pricing-wrapper .text {
+    text-align: center;
+  }
 
-    .home #logo-wrapper, .home #footer-logo-wrapper {
-        padding: 1em;
-        gap: 1em;
-    }
-
-    .home #logo-wrapper {
-      justify-content: center;
-    }
-
-    .home #logo-wrapper h1, .home #footer-logo-wrapper h1 {
-        font-size: 2em;
-      }
-
-    .home .div-wrapper, hero {
-        padding: 1em;
-    }
-
-    .home .placeholder-image-2, .home .div-3 {
-        max-width: 100%;
-    }
-
-    .home .medium-length-hero {
-        position: relative;
-        align-self: stretch;
-        text-align: center;
-        margin-top: -1px;
-        /* font-family: var(--heading-h1-mobile-font-family); */
-        font-weight: var(--heading-h1-mobile-font-weight);
-        color: var(--black);
-        font-size: var(--heading-h1-mobile-font-size);
-        letter-spacing: var(--heading-h1-mobile-letter-spacing);
-        line-height: var(--heading-h1-mobile-line-height);
-        font-style: var(--heading-h1-mobile-font-style);
-    }
-
-    .home .p {
-        font-size: var(--text-medium-mobile-normal-font-size);
-        line-height: var(--text-large-normal-line-height);
-        position: relative;
-        align-self: stretch;
-        font-weight: var(--text-medium-mobile-normal-font-weight);
-        color: var(--black);
-        letter-spacing: var(--text-medium-mobile-normal-letter-spacing);
-        font-style: var(--text-medium-mobile-normal-font-style);
-        text-align: center;
-      }
-    .home .content-5 {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .home .div-wrapper-2 {
-        padding: 32px 0;
-    }
-
-    .home .actions-2 .form {
-        flex-direction: column;
-    }
-
-    .home .actions-2 .form .type-default, .home .actions-2 .form .style-primary-small-2{
-        width: 100%;
-    }
-
-    .home .benefits {
-        padding: 0em 1em;
-    }
-
-    .home .column-2 {
-        width: 100%;
-    }
-
-    .home .CTA {
-        padding: 3em 1em;
-    }
-
-    .home .text-2, .home .text-5 {
-        font-size: 1em;
-    }
-
-    .home .style-primary-small-3 {
-        width: 100%;
-    }
-
-    .home .faq {
-        width: 100%;
-    }
-    
-    .home .faq .container-2 {
-        width: 100%;
-        gap: 2em;
-    }
-
-    .home .section-title {
-        width: 100%;
-    }
-
-    .home .placeholder-image-3 {
-        width: 100%;
-    }
-
-    .home .content-7 {
-        width: 100%;
-    }
-
-    .home .get-ready {
-        padding: 2em 1em;
-    }
-
-    .home .row {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 2em;
-    }
-
-    .home .footer {
-        padding: 1em;
-        gap: 0;
-    }
-
-    .home .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home .footer-links.policies {
-      margin-left: 0;
-    }
-
-    #mc_embed_signup_scroll {
-        flex-direction: column;
-        margin-bottom: 3vw;
-      }
-    #mc_embed_signup_scroll .button {
-        width: 100%;
-    }
-
-    #mce-EMAIL {
-        margin: 0 0 4vw 0
-    }
-
-    .button {
-        cursor: pointer;
-        transition: none;
-        /* background-color: var(--sinopia); */
-        /* box-shadow: 0 2px 25px rgba(201, 55, 12, 0.5); */
-        box-shadow: 0 0.5em 0.5em -0.4em rgba(0,0,0,0.24);
-        /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
-    }
-    
-    .button:hover,
-    .button:focus {
-        /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
-        box-shadow: none;
-        transform: none;
-    }
-
-    .button:active {
-    transform: none;
-    }
-
-    .home .placeholder-image-2  {
-        /* max-width: 350px; */
-        border-radius: 2%;
-        min-height: unset !important;
-        width: 100vw !important;
-    }
-
-    .home .placeholder-image-3 {
-        border-radius: 2%;
-    }
-
-    .home .home-cooking .div-4 {
-      align-items: flex-start;
-      text-align: left;
-    }
-
-    /* .home .placeholder-image-3 {
-        border-radius: 2%;
-    } */
-
-    .testimonial-carousel {
-      height: 367px;
-  }  
+.pricing-section h2 {
+    color: #000; /* Black color for the text */
+    font-size: 32px; /* Larger font size for the title */
+    margin-bottom: 10px;
 }
+
+.pricing-section p {
+    color: #000; /* Black color for the subtitle */
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-section ul {
+    list-style-type: none; /* removes bullet points */
+    padding: 0;
+    text-align: left; /* Aligns text to the left */
+    max-width: 400px; /* Limits the width of the list */
+    margin: 0 auto; /* Centers the list */
+}
+
+.pricing-section li {
+    background-color: #ffffff; /* White background for each plan */
+    padding: 10px 0; /* Smaller padding for compact look */
+    border-bottom: 1px solid #ddd; /* Light grey border for separation */
+    font-size: 16px;
+    color: #000; /* Black text */
+}
+
+.pricing-section li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.pricing-section li strong {
+    font-size: 28px; /* Larger font size for price */
+    display: block; /* Makes price appear on its own line */
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #000; /* Black background for the button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px; /* Rounded corners for the button */
+    width: auto; /* Auto width based on content */
+    display: inline-block; /* Center button using text-align on parent */
+}
+
 
 .testimonials {
   padding: 50px 0;
@@ -1580,3 +1452,219 @@
 .user-info .title {
   color: #777;
 }
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+      .home .container {
+          flex-direction: column-reverse;
+          gap: 2em;
+          max-width: 100%;
+      }
+  
+      .home .logo {
+          /* width: 4em; */
+          height: 13vw;
+      }
+  
+      .home .logo-text {
+                /* width: 4em; */
+                height: 13vw;
+  
+      }
+  
+      .home .actions-2 {
+        align-items: center;
+      }
+      
+  
+      .home #logo-wrapper, .home #footer-logo-wrapper {
+          padding: 1em;
+          gap: 1em;
+      }
+  
+      .home #logo-wrapper {
+        justify-content: center;
+      }
+  
+      .home #logo-wrapper h1, .home #footer-logo-wrapper h1 {
+          font-size: 2em;
+        }
+  
+      .home .div-wrapper, hero {
+          padding: 1em;
+      }
+  
+      .home .placeholder-image-2, .home .div-3 {
+          max-width: 100%;
+      }
+  
+      .home .medium-length-hero {
+          position: relative;
+          align-self: stretch;
+          text-align: center;
+          margin-top: -1px;
+          /* font-family: var(--heading-h1-mobile-font-family); */
+          font-weight: var(--heading-h1-mobile-font-weight);
+          color: var(--black);
+          font-size: var(--heading-h1-mobile-font-size);
+          letter-spacing: var(--heading-h1-mobile-letter-spacing);
+          line-height: var(--heading-h1-mobile-line-height);
+          font-style: var(--heading-h1-mobile-font-style);
+      }
+  
+      .home .p {
+          font-size: var(--text-medium-mobile-normal-font-size);
+          line-height: var(--text-large-normal-line-height);
+          position: relative;
+          align-self: stretch;
+          font-weight: var(--text-medium-mobile-normal-font-weight);
+          color: var(--black);
+          letter-spacing: var(--text-medium-mobile-normal-letter-spacing);
+          font-style: var(--text-medium-mobile-normal-font-style);
+          text-align: center;
+        }
+      .home .content-5 {
+          flex-direction: column;
+          padding: 0;
+      }
+  
+      .home .div-wrapper-2 {
+          padding: 32px 0;
+      }
+  
+      .home .actions-2 .form {
+          flex-direction: column;
+      }
+  
+      .home .actions-2 .form .type-default, .home .actions-2 .form .style-primary-small-2{
+          width: 100%;
+      }
+  
+      .home .benefits {
+          padding: 0em 1em;
+      }
+  
+      .home .column-2 {
+          width: 100%;
+      }
+  
+      .home .CTA {
+          padding: 3em 1em;
+      }
+  
+      .home .text-2, .home .text-5 {
+          font-size: 1em;
+      }
+  
+      .home .style-primary-small-3 {
+          width: 100%;
+      }
+  
+      .home .faq {
+          width: 100%;
+      }
+      
+      .home .faq .container-2 {
+          width: 100%;
+          gap: 2em;
+      }
+  
+      .home .section-title {
+          width: 100%;
+      }
+  
+      .home .placeholder-image-3 {
+          width: 100%;
+      }
+  
+      .home .content-7 {
+          width: 100%;
+      }
+  
+      .home .get-ready {
+          padding: 2em 1em;
+      }
+  
+      .home .row {
+          flex-direction: column-reverse;
+          align-items: center;
+          gap: 2em;
+      }
+  
+      .home .footer {
+          padding: 1em;
+          gap: 0;
+      }
+  
+      .home .footer-links {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .home .footer-links.policies {
+        margin-left: 0;
+      }
+  
+      #mc_embed_signup_scroll {
+          flex-direction: column;
+          margin-bottom: 3vw;
+        }
+      #mc_embed_signup_scroll .button {
+          width: 100%;
+      }
+  
+      #mce-EMAIL {
+          margin: 0 0 4vw 0
+      }
+  
+      .button {
+          cursor: pointer;
+          transition: none;
+          /* background-color: var(--sinopia); */
+          /* box-shadow: 0 2px 25px rgba(201, 55, 12, 0.5); */
+          box-shadow: 0 0.5em 0.5em -0.4em rgba(0,0,0,0.24);
+          /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+      }
+      
+      .button:hover,
+      .button:focus {
+          /* box-shadow: 0 0.5em 0.5em -0.4em var(--hover); */
+          box-shadow: none;
+          transform: none;
+      }
+  
+      .button:active {
+      transform: none;
+      }
+  
+      .home .placeholder-image-2  {
+          /* max-width: 350px; */
+          border-radius: 2%;
+          min-height: unset !important;
+          width: 100vw !important;
+      }
+  
+      .home .placeholder-image-3 {
+          border-radius: 2%;
+      }
+  
+      .home .home-cooking .div-4 {
+        align-items: flex-start;
+        text-align: left;
+      }
+  
+      /* .home .placeholder-image-3 {
+          border-radius: 2%;
+      } */
+  
+      .testimonial-carousel {
+        height: 367px;
+    }  
+
+
+    .home #pricing-wrapper {
+      padding: 73px 15px;
+    }
+  }
