@@ -1344,9 +1344,18 @@
 
     }
 
+    .home .actions-2 {
+      align-items: center;
+    }
+    
+
     .home #logo-wrapper, .home #footer-logo-wrapper {
         padding: 1em;
         gap: 1em;
+    }
+
+    .home #logo-wrapper {
+      justify-content: center;
     }
 
     .home #logo-wrapper h1, .home #footer-logo-wrapper h1 {
@@ -1364,6 +1373,7 @@
     .home .medium-length-hero {
         position: relative;
         align-self: stretch;
+        text-align: center;
         margin-top: -1px;
         /* font-family: var(--heading-h1-mobile-font-family); */
         font-weight: var(--heading-h1-mobile-font-weight);
@@ -1383,6 +1393,7 @@
         color: var(--black);
         letter-spacing: var(--text-medium-mobile-normal-letter-spacing);
         font-style: var(--text-medium-mobile-normal-font-style);
+        text-align: center;
       }
     .home .content-5 {
         flex-direction: column;
