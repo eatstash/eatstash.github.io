@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1vw;
+    max-width: 500px;
   }
 
   #mc_embed_signup form {
@@ -632,6 +633,7 @@
     letter-spacing: var(--text-tiny-normal-letter-spacing);
     line-height: var(--text-tiny-normal-line-height);
     font-style: var(--text-tiny-normal-font-style);
+    /* text-align: center; */
   }
   
   .home .div-wrapper-2 {
@@ -1594,6 +1596,10 @@
   
       .home .get-ready {
           padding: 2em 1em;
+      }
+
+      .home .by-clicking-sign-up {
+        text-align: center;
       }
   
       .home .row {
