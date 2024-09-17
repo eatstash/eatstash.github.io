@@ -90,6 +90,10 @@
     height: 5vw;
   }
 
+  .home .footer .logo {
+    height: 3vw;
+  }
+
   .home #logo-wrapper, .home #footer-logo-wrapper {
     width: 100%;
     flex-direction: row;
@@ -1242,12 +1246,13 @@
     gap: 16px; /* Reduce gap between social media icons */
     position: relative;
     flex: 0 0 auto;
-    margin-left: auto; /* Push social media links to the right */
   }
   
   #footer-logo-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .testimonials {
@@ -1462,10 +1467,14 @@
           gap: 2em;
           max-width: 100%;
       }
+
+      .home .footer {
+        margin-top: 34px;
+      }
   
-      .home .logo {
+      .home .logo, .home .footer .logo {
           /* width: 4em; */
-          height: 13vw;
+          height: 12vw;
       }
   
       .home .logo-text {
@@ -1598,10 +1607,9 @@
           gap: 0;
       }
   
-      .home .footer-links {
-          flex-direction: column;
+      /* .home .footer-links {
           align-items: center;
-      }
+      } */
   
       .home .footer-links.policies {
         margin-left: 0;
