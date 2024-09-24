@@ -711,7 +711,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
   .home .text {
     font-weight: var(--text-regular-normal-font-weight);
     color: var(--black);
-    font-size: var(--text-regular-normal-font-size);
+    font-size: var(--text-large-normal-font-size);
     line-height: var(--text-regular-normal-line-height);
     position: relative;
     align-self: stretch;
@@ -1552,14 +1552,14 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
       }
   
       .home .p {
-          font-size: var(--text-medium-mobile-normal-font-size);
+          font-size: var(--text-large-normal-font-size);
           line-height: var(--text-large-normal-line-height);
           position: relative;
           align-self: stretch;
-          font-weight: var(--text-medium-mobile-normal-font-weight);
+          font-weight: var(--text-large-normal-font-weight);
           color: var(--black);
-          letter-spacing: var(--text-medium-mobile-normal-letter-spacing);
-          font-style: var(--text-medium-mobile-normal-font-style);
+          letter-spacing: var(--text-large-normal-letter-spacing);
+          font-style: var(--text-large-normal-font-style);
           text-align: center;
         }
       .home .content-5 {
