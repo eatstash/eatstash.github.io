@@ -1368,7 +1368,8 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
 
   #pricing-section {
     background-color: #ffffff;  /* White background for the whole section */
-    padding: 40px 60px;
+    padding: 30px 60px;
+    padding-bottom: 0;
     /* border-radius: 8px; */
     text-align: center;
     margin: 0;
