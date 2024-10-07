@@ -43,19 +43,6 @@
 
       gtag('config', 'G-FDQ3VKGP4H');
     </script>
-  <script>
-    document.querySelectorAll('.app-store-link').forEach(function(link) {
-      link.addEventListener('click', function() {
-        const linkLocation = link.getAttribute('data-link'); // Get the unique identifier for each link
-
-        gtag('event', 'click', {
-          'event_category': 'App Store',
-          'event_label': `App Store Link - ${linkLocation}`, // Label the event with link identifier
-          'value': 1
-        });
-      });
-    });
-  </script>
   </head>
   <body>
     <div class="home">
@@ -455,5 +442,19 @@
       </div>
       
     </div>
+    <script>
+      document.querySelectorAll('.app-store-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          console.log('clicked')
+          const linkLocation = link.getAttribute('data-link'); // Get the unique identifier for each link
+          console.log(linkLocation)
+          gtag('event', 'click', {
+            'event_category': 'App Store',
+            'event_label': `App Store Link - ${linkLocation}`, // Label the event with link identifier
+            'value': 1
+          });
+        });
+      });
+    </script>
   </body>
 </html>
