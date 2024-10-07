@@ -43,6 +43,19 @@
 
       gtag('config', 'G-FDQ3VKGP4H');
     </script>
+  <script>
+    document.querySelectorAll('.app-store-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        const linkLocation = link.getAttribute('data-link'); // Get the unique identifier for each link
+
+        gtag('event', 'click', {
+          'event_category': 'App Store',
+          'event_label': `App Store Link - ${linkLocation}`, // Label the event with link identifier
+          'value': 1
+        });
+      });
+    });
+  </script>
   </head>
   <body>
     <div class="home">
@@ -62,7 +75,7 @@
               </p>
             </div>
             <div class="actions-2">
-              <a href="https://apps.apple.com/us/app/eatstash/id6502587231?itscg=30200&itsct=apps_box_badge&mttnsubad=6502587231" style="display: inline-block;">
+              <a href="https://apps.apple.com/us/app/eatstash/id6502587231?itscg=30200&itsct=apps_box_badge&mttnsubad=6502587231" style="display: inline-block;" data-link="header" class="app-store-link" >
                 <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1727049600" alt="Download on the App Store" style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
               </a>
                 <!-- <div id="mc_embed_shell">
@@ -227,7 +240,7 @@
             <li  class="text"><strong>Monthly Subscription:</strong> $9.99 USD/month</li>
             <li class="text"><strong>Annual Subscription:</strong> $79.99 USD/year (That's 4 months free)</li>
           </ul> -->
-          <a href="https://apps.apple.com/us/app/eatstash/id6502587231?itscg=30200&itsct=apps_box_link&mttnsubad=6502587231" style="display: inline-block;">
+          <a href="https://apps.apple.com/us/app/eatstash/id6502587231?itscg=30200&itsct=apps_box_link&mttnsubad=6502587231" style="display: inline-block;" data-link="pricing" class="app-store-link" >
             <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1416355200" alt="Download on the App Store" style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
           </a>
           <br><br>
@@ -248,7 +261,7 @@
               </p>
             </div>
             <div class="actions-2">
-              <a href="https://apps.apple.com/us/app/eatstash/id6502587231?itscg=30200&itsct=apps_box_badge&mttnsubad=6502587231" style="display: inline-block;">
+              <a href="https://apps.apple.com/us/app/eatstash/id6502587231?itscg=30200&itsct=apps_box_badge&mttnsubad=6502587231" style="display: inline-block;" data-link="header" class="app-store-link" >
                 <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?releaseDate=1727049600" alt="Download on the App Store" style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
               </a>
               <!-- <div id="mc_embed_shell">
