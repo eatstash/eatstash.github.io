@@ -505,15 +505,11 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
   }
   
   .home .placeholder-image-2 {
-    /* height: 640px; */
-    /* position: relative; */
     max-width: 46%;
     flex: 1;
     /* flex-grow: 1; */
     /* object-fit: cover; */
-
-
-    height: 640px;
+    /* height: 640px; */
     position: relative;
     flex: 1;
     flex-grow: 1;
@@ -751,6 +747,11 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     gap: 8px;
     position: relative;
     flex: 0 0 auto;
+  }
+
+  .cta-video iframe {
+    width: 100%;
+    flex: 1;
   }
   
   .home .CTA {
@@ -1703,6 +1704,10 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
       .testimonial-carousel {
         height: 380px;
     }  
+
+    .cta-video iframe {
+      height: 100%;
+    }
 
 
     .home #pricing-wrapper {
