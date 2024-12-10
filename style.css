@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     line-height: var(--text-regular-normal-line-height);
     font-style: var(--text-regular-normal-font-style);
     margin-right: 1vw;
+    border-radius: 5px;
   }
   /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
@@ -115,6 +116,8 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     /* position: relative; */
     /* width: 113px; */
     height: 5vw;
+    border-radius: 5px;
+
   }
 
   .home .footer .logo {
@@ -514,6 +517,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     flex: 1;
     flex-grow: 1;
     object-fit: contain;
+    border-radius: 14px;
   }
   
   .home .div-3 {
@@ -582,6 +586,10 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
+  }
+
+  .home .cta-video-content {
+    border-radius: 14px;
   }
   
   .home .type-default {
@@ -1381,6 +1389,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     max-width: 500px;
     gap: 3px;
     border: 1px solid #000; /* Black border around the pricing box */
+    border-radius: 15px;
   }
 
   .home .pricing-wrapper {
@@ -1687,7 +1696,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
   
       .home .placeholder-image-2  {
           /* max-width: 350px; */
-          border-radius: 2%;
+          border-radius: 20px;
           min-height: unset !important;
           width: 100vw !important;
       }
