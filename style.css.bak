@@ -31,8 +31,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     width: 100%;
     position: relative;
     background-color: white;
-    max-width: 2000px; /* Limit width on ultra-wide screens */
-    margin: 0 auto; /* Center the content */
   }
 
   #mc_embed_shell {
@@ -132,8 +130,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     display: flex;
     align-items: center;
     gap: 2em;
-    max-width: 1800px; /* Limit width on ultra-wide screens */
-    margin: 0 auto; /* Center the content */
   }
 
   .home #logo-wrapper {
@@ -145,7 +141,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     font-size: 4vw;
     font-weight: 100;
     font-family: var(--heading-h1-font-family);
-    max-font-size: 60px; /* This is not standard CSS but clarifies the intent */
   }
   
   .home .column {
@@ -496,8 +491,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     /* position: relative; */
     /* flex: 0 0 auto; */
     /* background-color: var(--white); */
-    max-width: 1800px; /* Limit width on ultra-wide screens */
-    margin: 0 auto; /* Center the content */
   }
 
   .home .div-wrapper,hero {
@@ -512,8 +505,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     gap: 80px;
     position: relative;
     flex: 0 0 auto;
-    max-width: 1600px; /* Limit container width on ultra-wide screens */
-    margin: 0 auto; /* Center the container */
   }
   
   .home .placeholder-image-2 {
@@ -527,7 +518,6 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     flex-grow: 1;
     object-fit: contain;
     border-radius: 14px;
-    max-height: 600px; /* Control max height */
   }
   
   .home .div-3 {
@@ -581,7 +571,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
     padding: 16px 0px 0px;
     position: relative;
@@ -598,11 +588,8 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     flex: 0 0 auto;
   }
 
-  .home .div-3.full-width {
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
+  .home .cta-video-content {
+    border-radius: 14px;
   }
   
   .home .type-default {
@@ -774,9 +761,9 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     font-weight: bold;
   }
 
-  /* CTA section styling */
-  .home .CTA .container {
-    justify-content: center;
+  .cta-video iframe {
+    width: 100%;
+    flex: 1;
   }
   
   .home .CTA {
@@ -1731,10 +1718,8 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
         height: 380px;
     }  
 
-    /* Additional CTA section styling */
-.home .div-3.full-width .div-4 {
-      text-align: center;
-      align-items: center;
+    .cta-video iframe {
+      height: 100%;
     }
 
 
@@ -1742,32 +1727,3 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
       padding: 73px 15px;
     }
   }
-
-/* Ultra-wide screen optimizations */
-@media only screen and (min-width: 1921px) {
-  .home .medium-length-hero {
-    font-size: 48px; /* Cap font size on ultra-wide screens */
-  }
-  
-  .home .p {
-    font-size: 18px; /* Maintain readable text size */
-  }
-  
-  .home .container {
-    max-width: 1600px; /* Limit container width */
-    margin: 0 auto;
-  }
-  
-  .home .placeholder-image-2 {
-    max-height: 600px; /* Prevent image from becoming too tall */
-    object-fit: contain;
-  }
-  
-  .home #logo-wrapper h1 {
-    font-size: 60px; /* Cap logo font size */
-  }
-  
-  .home .logo {
-    height: 60px; /* Cap logo height */
-  }
-}
