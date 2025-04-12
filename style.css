@@ -119,7 +119,11 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     /* width: 113px; */
     height: 5vw;
     border-radius: 5px;
-
+  }
+  
+  .home .logo-stacked {
+    height: 8vw;
+    max-height: 100px; /* Limit height on larger screens */
   }
 
   .home .footer .logo {
@@ -131,22 +135,16 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     flex-direction: row;
     display: flex;
     align-items: center;
-    gap: 2em;
     max-width: 1800px; /* Limit width on ultra-wide screens */
     margin: 0 auto; /* Center the content */
   }
 
   .home #logo-wrapper {
     padding: 40px 64px 0 64px;
+    gap: 1em;
   }
 
-  .home #logo-wrapper h1, .home #footer-logo-wrapper h1 {
-    /* font-weight: bold; */
-    font-size: 4vw;
-    font-weight: 100;
-    font-family: var(--heading-h1-font-family);
-    max-font-size: 60px; /* This is not standard CSS but clarifies the intent */
-  }
+  /* Logo heading styles removed in favor of stacked logo image */
   
   .home .column {
     display: inline-flex;
@@ -426,6 +424,12 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     width: 160px;
     height: 105px;
     object-fit: cover;
+  }
+
+  .home .placeholder-image-1 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 14px;
   }
   
   .home .content-3 {
@@ -1532,6 +1536,11 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
           /* width: 4em; */
           height: 12vw;
       }
+      
+      .home .logo-stacked {
+          height: 20vw;
+          max-height: none;
+      }
   
       .home .logo-text {
                 /* width: 4em; */
@@ -1763,11 +1772,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
     object-fit: contain;
   }
   
-  .home #logo-wrapper h1 {
-    font-size: 60px; /* Cap logo font size */
-  }
-  
-  .home .logo {
-    height: 60px; /* Cap logo height */
+  .home .logo-stacked {
+    height: 80px; /* Fixed size on ultra-wide screens */
   }
 }
