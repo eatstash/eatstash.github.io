@@ -1,6 +1,6 @@
 :root {
   --black: rgba(0, 0, 0, 1);
-  --white: rgba(255, 255, 255, 1);
+  --white: #FCFCFC;
   --light-grey: rgba(244, 244, 244, 1);
   --yellow: #E9B421;
   --yellowLight: rgba(248, 206, 19, 0.257);
@@ -15,7 +15,7 @@
   
   --heading-h1-font-family: "Lora", serif;
   --heading-h1-font-weight: 700;
-  --heading-h1-font-size: 4vw;
+  --heading-h1-font-size: 3vw;
   --heading-h1-letter-spacing: 0px;
   --heading-h1-line-height: 120.00000476837158%;
   --heading-h1-font-style: normal;
