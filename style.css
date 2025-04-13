@@ -746,9 +746,13 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
   height: 48px;
 }
 
+.footer-text .medium-length-hero {
+  margin-bottom: 40px;
+}
+
 .home .heading {
   color: var(--black);
-  font-size: var(--heading-h3-font-size);
+  font-size: var(--heading-h4-font-size);
   line-height: var(--heading-h3-line-height);
   position: relative;
   align-self: stretch;
@@ -1465,7 +1469,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
 
 .pricing-section p {
     color: #000; /* Black color for the subtitle */
-    font-size: 16px;
+    /* font-size: 12px; */
     margin-top: 0;
     margin-bottom: 30px;
 }
@@ -1635,7 +1639,7 @@ h1, h2, h3, h4, h5, h6, p, span, li, a {
       }
   
       .home .p {
-          font-size: var(--text-large-normal-font-size);
+          font-size: var(--text-medium-normal-font-size);
           line-height: var(--text-large-normal-line-height);
           position: relative;
           align-self: stretch;
