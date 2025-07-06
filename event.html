@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatStash - Locust Street Festival</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #292929;
+            background-color: #FCFCFC;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #E66A00;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px 0;
+            color: #E66A00;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 30px 0 15px 0;
+            color: #E66A00;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .problem-list {
+            background-color: #FDF7EF;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .problem-list p {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .feature-list {
+            background-color: #FDF7EF;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .feature-list p {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .testimonials {
+            background-color: #FDF7EF;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #E66A00;
+        }
+
+        .testimonials p {
+            font-style: italic;
+            margin-bottom: 15px;
+            /* color: #292929; */
+        }
+
+        .cta-section {
+            background-color: #E66A00;
+            color: #FCFCFC;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .pricing-highlight {
+            background-color: #E6803D;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .pricing-highlight .original-price {
+            text-decoration: line-through;
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+
+        .pricing-highlight .discount-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .app-store-button {
+            display: inline-block;
+            background-color: #FBBC04;
+            color: #292929;
+            padding: 16px 24px;
+            text-decoration: none;
+            border-radius: 100px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .instagram-embed {
+            text-align: center;
+            /* margin: 30px 0; */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .instagram-embed iframe {
+            max-width: 100%;
+            border: none;
+        }
+
+        .social-links {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .social-links a {
+            color: #E66A00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            background-color: #FDF7EF;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact a {
+            color: #E66A00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #DDDDDD;
+            color: #9B9B9B;
+            font-style: italic;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #FDF7EF;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .intro {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDQ3VKGP4H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FDQ3VKGP4H');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Nice to meet you! 👋</h1>
+        
+        <p class="intro">Thanks for stopping by my booth at the Locust Street Festival!</p><p class="intro"> I'm Christine, and I built EatStash because I was tired of having recipes everywhere but still ordering takeout all the time.</p>
+
+        <h2>Does this sound familiar?</h2>
+        
+        <div class="problem-list">
+            <p>📱 Recipes scattered across Instagram saves, browser bookmarks, and screenshot folders</p>
+            <p>🤔 Standing in the kitchen at 6pm asking "what's for dinner?" for the 100th time</p>
+            <p>💸 Spending $300+ monthly on takeout because meal planning feels impossible</p>
+            <p>🗑️ Watching fresh ingredients spoil in your fridge because you bought them without a plan</p>
+        </div>
+
+        <h2>Here's what EatStash does:</h2>
+        
+        <div class="feature-list">
+            <p>🔥 <strong>Imports recipes from everywhere</strong> - Instagram, food blogs, cookbooks, even grandma's handwritten cards</p>
+            <p>🔥 <strong>Auto-organizes everything</strong> with smart tags like "Quick," "Vegetarian," "One-pot", "Dinner", "No-cook"</p>
+            <p>🔥 <strong>Creates meal plans in 5 minutes</strong> instead of an hour of struggling</p>
+            <p>🔥 <strong>Generates grocery lists</strong> sorted by aisle from your meal plan</p>
+            <p>🔥 <strong>Hands-free cooking mode</strong> - navigate recipes without touching your messy hands to your phone</p>
+        </div>
+
+        <hr>
+
+        <h2>What users are saying:</h2>
+        
+        <div class="testimonials">
+            <p><em>"Wait, it can import from Instagram Reels? That's where all my recipes are!"</em></p>
+            <p><em>"The hands-free thing is genius - I'm always getting my phone dirty when cooking."</em></p>
+            <p><em>"We made our meal plan in 5 minutes! It usually takes so long, but now it's so fast because everything's so accessible."</em></p>
+            <p><em>"I have been meaning to cook so many recipes that I've saved, and EatStash makes it so easy to put them in my meal plan, grocery shop, and make them. It's encouraged me to try SO many new recipes that I would have just saved and forgotten."</em></p>
+        </div>
+
+        <hr>
+
+        <div class="cta-section">
+            <h2>Festival Special 🎪</h2>
+            <div class="pricing-highlight">
+                <p><strong>30-day free trial + $7.99/month for your first year</strong></p>
+                <p style="opacity: 0.9; font-size: 1rem;">Regular price: $9.99/month</p>
+            </div>
+
+            <p>No commitment. If EatStash saves you even one takeout order, it's already paid for itself!</p>
+            
+            <a href="https://apps.apple.com/redeem?ctx=offercodes&id=6502587231&code=LOCUST30" class="app-store-button" target="_blank" onclick="gtag('event', 'click', { 'event_category': 'App Store', 'event_label': 'Locust Festival CTA', 'value': 1 });">Start Your Free Trial →</a>
+        </div>
+
+        <hr>
+
+        <h3>See EatStash in Action:</h3>
+        
+        <div class="instagram-embed">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLVpZ3fiano/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                        <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                        </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"></div>
+                    <div style="padding-top: 8px;">
+                        <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                        <div>
+                            <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                            <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                            <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                        </div>
+                        <div style="margin-left: 8px;">
+                            <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                            <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                        </div>
+                        <div style="margin-left: auto;">
+                            <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                            <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                            <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                        </div>
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+
+        <div class="social-links">
+            <p><em>Follow <a href="https://instagram.com/eatstash" target="_blank">@eatstash</a> for more meal planning tips and behind-the-scenes content!</em></p>
+        </div>
+
+        <hr>
+
+        <div class="contact">
+            <p><strong>Questions?</strong> Email me directly: <a href="mailto:christine@eatstash.com">christine@eatstash.com</a></p>
+            <p>Built by a real meal planner, for real meal planners ❤️</p>
+        </div>
+
+        <div class="footer">
+            <p><em>From one busy Bay Area cook to another - I hope EatStash gives you your evenings back!</em></p>
+        </div>
+    </div>
+
+    <!-- Instagram Embed Script -->
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html> 
